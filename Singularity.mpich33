@@ -7,7 +7,7 @@ From: centos
    cp example_codes/pi.c ${SINGULARITY_ROOTFS}/mpitestapp/
 
 %post
-   # install development tools
+   # install dev tools
    yum update -y
    yum groupinstall -y "Development Tools"
    yum install -y gcc gcc-c++ wget
